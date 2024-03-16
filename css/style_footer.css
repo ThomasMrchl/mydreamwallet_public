@@ -1,0 +1,49 @@
+.site-footer
+{
+  margin-top: 20%;
+  background-color:#15172b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+  text-align: center;
+  opacity: 0.9;
+  background-image: radial-gradient(#1d2148 1px, #15172b 1px);
+  background-size: 20px 20px;
+}
+
+.site-footer a
+{
+  color:#08d;
+}
+.site-footer a:hover
+{
+  color:#08d;
+  text-decoration:none;
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.copyright-text
+{
+  margin:0;
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}

@@ -1,0 +1,305 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 40vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-auto-flow: dense;
+  height: auto;
+  row-gap: 50px;
+}
+
+.card_common{
+  background: #15172b;
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.card_common img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_common:hover {
+  color: #08d;
+  transition: color 1s;
+}
+
+.card_common:hover:before {
+  animation: none;
+  opacity: 0;
+}
+
+.card_common::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #04FF0C 25%,
+    #015523 75%
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card_common:hover:before, .card_common:hover:after {
+  animation:reverse;
+  opacity: 80;
+}
+
+.card_rare{
+  background: #15172b;
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.card_rare img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_rare:hover {
+  color: #08d;
+  transition: color 1s;
+}
+
+.card_rare:hover:before {
+  animation: none;
+  opacity: 0;
+}
+
+.card_rare::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #0575E6 25%,
+    #021B79 75%
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card_rare:hover:before, .card_rare:hover:after {
+  animation:reverse;
+  opacity: 80;
+}
+
+.card_epic{
+  background: #15172b;
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.card_epic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_epic:hover {
+  color: #08d;
+  transition: color 1s;
+}
+
+.card_epic:hover:before {
+  animation: none;
+  opacity: 0;
+}
+
+.card_epic::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #FE0CA7 25%,
+    #a335ee 75%
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card_epic:hover:before, .card_epic:hover:after {
+  animation:reverse;
+  opacity: 80;
+}
+
+.card_legendary{
+  background: #15172b;
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.card_legendary img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_legendary:hover {
+  color: #08d;
+  transition: color 1s;
+}
+
+.card_legendary:hover:before {
+  animation: none;
+  opacity: 0;
+}
+
+.card_legendary::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #ff8000 25%,
+    #FFD900 75%
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card_legendary:hover:before, .card_legendary:hover:after {
+  animation:reverse;
+  opacity: 80;
+}
+
+.card {
+  background: #15172b;
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card:hover {
+  color: #08d;
+  transition: color 1s;
+}
+
+.card:hover:before {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #ff8000,
+    #a335ee 75%,
+    #0070dd,
+    #50C878
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card:hover:before, .card:hover:after {
+  animation:reverse;
+  opacity: 80;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}

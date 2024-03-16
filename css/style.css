@@ -1,0 +1,124 @@
+
+body{
+    font-family: DejaVu Sans Mono, monospace;
+    background-color: #15172b;
+    padding-top: 1%;
+    background-color: #15172b;
+    opacity: 0.9;
+    background-image: radial-gradient(#1d2148 1px, #15172b 1px);
+    background-size: 20px 20px;
+}
+
+/* Add a black background color to the top navigation */
+  .topnav {
+  overflow: hidden;
+  font-size: 20px;
+  padding-bottom: 1em;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+  color: #08d;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  color: white;
+  background-color: #08d;
+  border-radius: 6px;
+  margin-right: 1em;
+  }
+
+  .topnav a.active:hover {
+    border-radius: 30px;
+  }
+
+  
+  .topnav a.partielogo {
+    color:white;
+     height: 1em;
+     background-color: #08d;
+     border-radius: 6px;
+     margin-left: 1em;
+  }
+  
+  .topnav a.partielogo:hover {
+    border-radius: 30px;
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+  float: right;
+  }
+
+  .button-9 {
+    margin-top: 2%;
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #08d;
+    border-radius: 6px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 200%;
+    height: 2em;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
+  }
+
+  .button-9:disabled {
+    cursor: default;
+  }
+  
+  .button-9:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
+
+  .button-9:hover{
+    border-radius: 30px;
+  }
+  
+  .title{
+    color:white;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 5em;
+    font-weight: bold;  
+    padding-bottom: 2%;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 3em;
+    color:#08d;
+    font-style: italic;
+    width: 100%;
+    padding-bottom: 2%;
+}

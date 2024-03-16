@@ -1,0 +1,58 @@
+.submit {
+    background-color: #08d;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #3c096c;
+    cursor: pointer;
+    font-size: 7em;
+    height: auto;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: auto;
+    font-family: DejaVu Sans Mono, monospace;
+}
+
+
+.container {
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: DejaVu Sans Mono, monospace;
+    border-top: 5px solid #08d;
+    border-bottom: 5px solid #08d;
+    max-width: 60%;
+    width: 100%;
+    color:black;
+    background-color: white;
+    min-height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.title_questions{
+    margin-top: 2%;
+    font-size: 4em;
+    text-align: left;
+    font-weight: bold; 
+}
+
+.response{
+    margin-top: 2%;
+    font-size: 2em;
+    text-align: left;
+    color: #08d;
+    font-style: italic;
+}
+
+.container_bis {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: DejaVu Sans Mono, monospace;
+    max-width: 60%;
+    width: 100%;
+    color:white;
+    min-height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}

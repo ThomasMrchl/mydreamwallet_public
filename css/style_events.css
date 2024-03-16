@@ -1,0 +1,155 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+  :root {
+    --card-height: 40vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+  .card.flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  .card.flipped .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+  }
+  
+  .card-front {
+    z-index: 2;
+  }
+  
+  .card-back {
+    transform: rotateY(-180deg);
+    z-index: 1;
+  }
+
+
+.description{
+  color:white;
+}
+
+  .card-container {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 100px;
+    padding-left:5%;
+    padding-right: 5%;
+    row-gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.button-buy{
+  margin-top: 60%;
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #08d;
+  border-radius: 6px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 110%;
+  height: 2em;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.button-buy:hover{
+  border-radius: 30px;
+}
+  
+  .card {
+    background: #15172b;
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .card:hover {
+    color: #08d;
+    transition: color 0.4s;
+  }
+  
+  .card:hover:before {
+    animation: none;
+    opacity: 0;
+  }
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate),
+      #ff8000,
+      #a335ee 75%,
+      #0070dd,
+      #50C878
+    );
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  .card:hover:before, .card:hover:after {
+    animation:reverse;
+    opacity: 80;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
