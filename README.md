@@ -6,4 +6,4 @@ My dream wallet was a fun website where you could, invest in cryptos, collect ki
 
 Before that i had no experience with php, html, css and js. It helps me to understand the basic concepts and also to deal with SQL databases.
 
-- Thomas M
+-> Thomas M
